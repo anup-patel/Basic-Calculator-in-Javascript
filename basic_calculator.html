@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Calculator - By Anup </title>
+
+	<style type="text/css">
+		a:link
+		{
+			color:white;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function sum()
+		{
+			var a1=parseInt(document.getElementById('first').value);
+			var a2=parseInt(document.getElementById('second').value);
+			var a3=document.getElementById('options').value;
+			switch(a3)
+			{
+
+				case '+':
+				{
+					var a4=a1+a2;
+					document.getElementById('result').value=a4;
+					break;
+				}
+				case '-':
+				{
+					var a4=a1-a2;
+					document.getElementById('result').value=a4;
+					break;
+				}
+				case '*':
+				{
+					var a4=a1*a2;
+					document.getElementById('result').value=a4;
+					break;
+				}
+				case '/':
+				{
+					var a4=a1/a2;
+					document.getElementById('result').value=a4;
+					break;
+				}
+				default:
+				{
+					document.write("Wrong Choice")
+				}
+
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+<h1 style="text-decoration: underline;font-family: ubuntu"><center>Welcome to Online Calculator Software</center></h1><br>
+
+<table height="200px" align="center" style="border-collapse:collapse;margin-top:20px;margin-bottom:20px;border-radius:10px;cellspacing:200px">
+	<tr>
+		<td width="300px">Enter First Number</td>
+		<td><input type="text" Placeholder="Enter Your First Number" id="first"></td>
+	</tr>
+	<tr>
+		<td width="200px">Enter Second Number</td>
+		<td><input type="text" Placeholder="Enter Your Second Number" id="second"></td>
+	</tr>
+	<tr>
+		<td>Please Choose the Operation</td>
+		<td><select id="options" style="width:100px">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><button onclick="sum()">Calculate</button> </td>
+		<td><input type="text" readonly id="result"></td>
+	</tr>
+
+</table>
+
+<div style="background-color:black; height:20px ;width:700px;margin-left: 300px"><p align="center" style="color:white;">&copy; Software Developed by <a href="http://imanup.net">Anup Patel</a>.</p></div>
+
+
+
+
+</body>
+</html>
