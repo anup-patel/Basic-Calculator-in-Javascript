@@ -1,2 +1,2 @@
 # javascript
-Code From Different javascript Program
+A Simple javascript program for Basic Calculator
